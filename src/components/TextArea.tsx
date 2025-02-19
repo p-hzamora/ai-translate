@@ -10,7 +10,9 @@ interface Props {
 
 }
 
-const commonStyle = { border: 0, height: '200px' }
+type ResizeProperty = 'none' | 'both' | 'horizontal' | 'vertical' | 'block' | 'inline';
+const commonStyle = { border: 0, height: 'auto', minHeight: '200px', resize: 'none' as ResizeProperty }
+
 
 const getPlaceholder = ({ type, loading }: { type: SectionType, loading?: boolean }) => {
     if (type === SectionType.From) return "Introducir texto"
