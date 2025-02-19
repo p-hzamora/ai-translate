@@ -69,7 +69,7 @@ function App() {
 
 	return (
 		<div className="App">
-			<h1>Google Translate</h1>
+			<h1>IA Translate</h1>
 			<Row>
 				<Col>
 					<Stack gap={2}>
